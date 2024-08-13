@@ -45,7 +45,7 @@ const productItems = [
     iOSSrc: OfficeChairUsdz,
     category: "Furniture",
     color: "black",
-    price: "8,00,000",
+    price: "80,000",
     annotations: [
       {
         title: "comfortable-back",
@@ -66,11 +66,12 @@ const productItems = [
   },
   {
     id: 3,
-    name: "Headphone",
+    name: "iPhone",
     modelSrc: pot,
     iOSSrc: potUsdz,
     category: "Environment",
     color: "Red",
+    price: "12,000",
     annotations: [
       {
         title: "pot-structure",
@@ -89,6 +90,7 @@ const productItems = [
     iOSSrc: iospainting,
     category: "Art",
     color: "Brown",
+    price: "10,000",
     annotations: [
       {
         title: "wooden-frame",
@@ -109,11 +111,12 @@ const productItems = [
   },
   {
     id: 5,
-    name: "Car",
+    name: "JBL Headphones",
     modelSrc: car,
     iOSSrc: ioscar,
     category: "Vehicle",
     color: "Blue",
+    price: "8,000",
     annotations: [
       {
         title: "plastic-structure",
@@ -134,11 +137,12 @@ const productItems = [
   },
   {
     id: 6,
-    name: "Sport Car",
+    name: "Walmart Headphones",
     modelSrc: car1,
     iOSSrc: ioscar1,
     category: "Vehicle",
     color: "Red",
+    price: "6,000",
     annotations: [
       {
         title: "plastic-structure",
