@@ -6,7 +6,8 @@ import car from "../assets/models/car.glb";
 import ioscar from "../assets/models/car.usdz";
 import car1 from "../assets/models/Car1.glb";
 import ioscar1 from "../assets/models/Car1.usdz";
-import OfficeChair from "../assets/models/OfficeChair.usdz";
+import OfficeChair from "../assets/models/OfficeChair.glb";
+import OfficeChairUsdz from "../assets/models/OfficeChair.usdz";
 import pot from "../assets/models/pot.glb";
 import potUsdz from "../assets/models/pot.usdz";
 
@@ -17,6 +18,7 @@ const productItems = [
     modelSrc: sheenchair,
     iOSSrc: ioschair,
     category: "Furniture",
+    price: "1,00,000",
     color: "Orange",
     annotations: [
       {
@@ -40,9 +42,10 @@ const productItems = [
     id: 2,
     name: "Television",
     modelSrc: OfficeChair,
-    iOSSrc: OfficeChair,
+    iOSSrc: OfficeChairUsdz,
     category: "Furniture",
     color: "black",
+    price: "8,00,000",
     annotations: [
       {
         title: "comfortable-back",
