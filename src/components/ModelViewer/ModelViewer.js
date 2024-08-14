@@ -131,29 +131,7 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
           </>
         )}
         
-        <button className="annotate-btn" onClick={() => setAnnotate((prevState) => !prevState)}>
-          i
-        </button>
 
-        {annotate && item.annotations.map((annotate, idx) => (
-          <button
-            key={idx}
-            class="Hotspot"
-            slot={annotate.slot}
-            data-position={annotate.position}
-            data-normal={annotate.normal}
-            data-orbit={annotate.orbit}
-            data-target={annotate.target}
-            data-visibility-attribute="visible"
-            onClick={() => handleAnnotateClick(annotate)}
-          >
-            <div class="HotspotAnnotation">{annotate.title}</div>
-          </button>
-        ))}
-        
-        <div class="controls variant_div">
-          <select ref={varient} id="variant"></select>
-        </div>
       </model-viewer>
         
       <LazyLoad>

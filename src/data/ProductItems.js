@@ -27,7 +27,7 @@ import sony from "../assets/models/sony.glb"
 
 //this part is not for our use just used for testing the ARs
 
-import ioschair from "../assets/models/sheenchair.usdz";
+import ioschair from "../assets/models/sheenchair.usdz"
 import painting from "../assets/models/Painting.glb";
 import iospainting from "../assets/models/Painting.usdz";
 import car from "../assets/models/car.glb";
