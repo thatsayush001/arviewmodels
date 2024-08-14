@@ -11,8 +11,8 @@ const Header = () => {
     <header>
       {/* Mobile Menu Icon */}
       <nav>
-        <div className="navtop">
-          <h3>
+        <div className="navtop flex justify-center">
+          <h3 className="felx">
             <Link
               to="/"
               onClick={() => showMobileSidebar && setShowMobileSidebar(false)}

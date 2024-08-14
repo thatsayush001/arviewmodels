@@ -69,21 +69,7 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
     });
   }, []);
    
-  useEffect(() => {
-    if (wishlist) {
-      const isInWishlist = wishlist.some((wishlistItem) => wishlistItem.id === item.id);
-      setIsInWishlist(isInWishlist);
-    }
-  }, [item, wishlist]);
-
-  const handleAddToWishlist = () => {
-    if (isInWishlist) {
-      removeFromWishlist(item.id);
-    } else {
-      addToWishlist(item);
-    }
-  };
-
+ 
   return (
     <div className="model-view ">
       <model-viewer
@@ -147,7 +133,23 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
               <div className="pname">{item.name}</div>
               <div className="rating-sec">
               </div>
-              <div>Rs. {item.price}</div> {/* Updated to use item.price */}
+              <div>₹ {item.price}</div> {/* Updated to use item.price */}
+
+              <div>
+                <div className="grid grid-cols-2 gap-6 bg-gray-50 p-4 rounded-lg shadow-sm">
+                  {Object.entries(item.specs).map(([key, value],index)=> (
+                    <div
+                      key={index}
+                      className="flex items-center text-gray-600"
+                    >
+                      <strong className="mr-2 text-sm font-medium text-gray-800">
+                        {key}:
+                      </strong>
+                      <span className="text-sm">{value}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
               {!ARSupported && <h5>Scan the QR code for AR View on mobile</h5>}
             </div>
           </div>

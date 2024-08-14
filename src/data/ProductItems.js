@@ -112,8 +112,15 @@ const productItems = [
     modelSrc: mobile3,
     iOSSrc: iosmobile3,
     category: "Phones",
-    price: "129,999",
+    price: "129999",
     color: "Black",
+    specs: {
+      display: "6.1-inch Super Retina XDR",
+      processor: "A16 Bionic",
+      storage: "128GB/256GB/512GB",
+      camera: "48MP + 12MP",
+      battery: "3200mAh"
+    }
   },
   {
     id: "mobile2",
@@ -121,8 +128,15 @@ const productItems = [
     modelSrc: mobile2,
     iOSSrc: iosmobile2,
     category: "Phones",
-    price: "39,999",
+    price: "39999",
     color: "Blue",
+    specs: {
+      display: "6.81-inch AMOLED",
+      processor: "Snapdragon 888",
+      storage: "128GB/256GB",
+      camera: "108MP + 13MP + 5MP",
+      battery: "4600mAh"
+    }
   },
   {
     id: "mobile4",
@@ -130,8 +144,15 @@ const productItems = [
     modelSrc: mobile4,
     iOSSrc: iosmobile4,
     category: "Phones",
-    price: "124,999",
+    price: "124999",
     color: "Green",
+    specs: {
+      display: "6.8-inch Dynamic AMOLED 2X",
+      processor: "Snapdragon 8 Gen 2",
+      storage: "256GB/512GB/1TB",
+      camera: "200MP + 12MP + 10MP + 10MP",
+      battery: "5000mAh"
+    }
   },
   {
     id: "mobile",
@@ -139,8 +160,15 @@ const productItems = [
     modelSrc: mobile,
     iOSSrc: iosmobile,
     category: "Phones",
-    price: "31,999",
+    price: "31999",
     color: "Gray",
+    specs: {
+      display: "6.67-inch IPS LCD",
+      processor: "Snapdragon 480 5G",
+      storage: "128GB",
+      camera: "64MP + 5MP + 2MP + 2MP",
+      battery: "4470mAh"
+    }
   },
   {
     id: "laptop1",
@@ -148,8 +176,15 @@ const productItems = [
     modelSrc: laptop1,
     iOSSrc: ioslaptop1,
     category: "Laptops",
-    price: "119,900",
+    price: "119900",
     color: "Silver",
+    specs: {
+      display: "13.6-inch Liquid Retina",
+      processor: "Apple M2",
+      storage: "256GB/512GB/1TB",
+      memory: "8GB/16GB",
+      battery: "18 hours"
+    }
   },
   {
     id: "laptop2",
@@ -157,44 +192,47 @@ const productItems = [
     modelSrc: laptop2,
     iOSSrc: ioslaptop2,
     category: "Laptops",
-    price: "62,990",
+    price: "62990",
     color: "Gray",
+    specs: {
+      display: "14-inch FHD",
+      processor: "AMD Ryzen 5",
+      storage: "512GB",
+      memory: "16GB",
+      battery: "10 hours"
+    }
   },
   {
     id: "laptop3",
-    name: "HP Victus 16",
+    name: "Dell XPS 13",
     modelSrc: laptop3,
     iOSSrc: ioslaptop3,
     category: "Laptops",
-    price: "109,990",
+    price: "149990",
     color: "Black",
+    specs: {
+      display: "13.4-inch FHD+",
+      processor: "Intel Core i7",
+      storage: "512GB",
+      memory: "16GB",
+      battery: "12 hours"
+    }
   },
   {
-    id: "speaker3",
-    name: "JBL Charge 5",
-    modelSrc: speaker3,
-    iOSSrc: iosspeaker3,
-    category: "Speakers",
-    price: "14,999",
-    color: "Black",
-  },
-  {
-    id: "speaker2",
-    name: "Sony SRS-XB43",
-    modelSrc: speaker2,
-    iOSSrc: iosspeaker2,
-    category: "Speakers",
-    price: "26,990",
-    color: "Black",
-  },
-  {
-    id: "headphones",
+    id: "headphones1",
     name: "Sony WH-1000XM5",
     modelSrc: headphones,
     iOSSrc: iosheadphones,
     category: "Headphones",
-    price: "34,990",
+    price: "34990",
     color: "Black",
+    specs: {
+      type: "Over-Ear",
+      noiseCancelling: "Yes",
+      batteryLife: "30 hours",
+      connectivity: "Bluetooth, Wired",
+      weight: "250 grams"
+    }
   },
   {
     id: "headphones3",
@@ -202,8 +240,15 @@ const productItems = [
     modelSrc: headphones3,
     iOSSrc: iosheadphones3,
     category: "Headphones",
-    price: "14,999",
+    price: "14999",
     color: "Gray",
+    specs: {
+      type: "Over-Ear",
+      noiseCancelling: "No",
+      batteryLife: "40 hours",
+      connectivity: "Bluetooth, Wired",
+      weight: "290 grams"
+    }
   },
   {
     id: "headphones2",
@@ -211,8 +256,15 @@ const productItems = [
     modelSrc: headphones2,
     iOSSrc: iosheadphones2,
     category: "Headphones",
-    price: "29,900",
+    price: "29900",
     color: "Black",
+    specs: {
+      type: "Over-Ear",
+      noiseCancelling: "Yes",
+      batteryLife: "24 hours",
+      connectivity: "Bluetooth, Wired",
+      weight: "290 grams"
+    }
   },
   {
     id: "headphones4",
@@ -220,8 +272,15 @@ const productItems = [
     modelSrc: headphones4,
     iOSSrc: iosheadphones4,
     category: "Headphones",
-    price: "24,999",
+    price: "24999",
     color: "Black",
+    specs: {
+      type: "Over-Ear",
+      noiseCancelling: "Yes",
+      batteryLife: "36 hours",
+      connectivity: "Bluetooth, Wired",
+      weight: "296 grams"
+    }
   },
   {
     id: "tv3",
@@ -229,8 +288,15 @@ const productItems = [
     modelSrc: tv1,
     iOSSrc: iostv1,
     category: "Television",
-    price: "159,999",
+    price: "159999",
     color: "Black",
+    specs: {
+      display: "55-inch Neo QLED",
+      resolution: "4K",
+      refreshRate: "120Hz",
+      smartTV: "Yes",
+      weight: "22 kg"
+    }
   },
   {
     id: "tv2",
@@ -238,8 +304,15 @@ const productItems = [
     modelSrc: tv2,
     iOSSrc: iostv2,
     category: "Television",
-    price: "229,990",
+    price: "229990",
     color: "Black",
+    specs: {
+      display: "55-inch OLED",
+      resolution: "4K",
+      refreshRate: "120Hz",
+      smartTV: "Yes",
+      weight: "18 kg"
+    }
   },
   {
     id: "tv1",
@@ -247,8 +320,15 @@ const productItems = [
     modelSrc: tv1,
     iOSSrc: iostv1,
     category: "Television",
-    price: "249,990",
+    price: "249990",
     color: "Black",
+    specs: {
+      display: "55-inch OLED",
+      resolution: "4K",
+      refreshRate: "120Hz",
+      smartTV: "Yes",
+      weight: "20 kg"
+    }
   },
   {
     id: "console2",
@@ -256,8 +336,15 @@ const productItems = [
     modelSrc: console2,
     iOSSrc: iosconsole2,
     category: "Gaming Consoles",
-    price: "49,990",
+    price: "49990",
     color: "White",
+    specs: {
+      storage: "825GB SSD",
+      resolution: "4K",
+      games: "Compatible with PS4 and PS5 games",
+      connectivity: "Wi-Fi, Bluetooth",
+      weight: "4.5 kg"
+    }
   },
   {
     id: "PSConsole",
@@ -265,8 +352,15 @@ const productItems = [
     modelSrc: PSconsole,
     iOSSrc: iosPSconsole,
     category: "Gaming Consoles",
-    price: "34,990",
+    price: "34990",
     color: "Black",
+    specs: {
+      storage: "1TB HDD",
+      resolution: "4K",
+      games: "Compatible with PS4 games",
+      connectivity: "Wi-Fi, Bluetooth",
+      weight: "3.3 kg"
+    }
   }
 ];
 
