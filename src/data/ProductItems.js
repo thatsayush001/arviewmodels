@@ -1,4 +1,32 @@
-import sheenchair from "../assets/models/sheenchair.glb";
+// import laptop1 from "../assets/models/sheenchair.glb";
+import laptop1 from "../assets/models/laptop1.glb"
+import laptop2 from "../assets/models/laptop2.glb"
+import laptop3 from "../assets/models/laptop3.glb"
+
+import mobile2 from "../assets/models/mobile2.glb"
+import mobile3 from "../assets/models/mobile3.glb"
+import mobile4 from "../assets/models/mobile4.glb"
+
+import headphones2 from "../assets/models/headphones2.glb"
+import headphones3 from "../assets/models/headphones3.glb"
+import headphones4 from "../assets/models/headphones4.glb"
+
+import speaker from "../assets/models/speaker.glb"
+import speaker2 from "../assets/models/speaker2.glb"
+import speaker3 from "../assets/models/speaker3.glb"
+
+import tv1 from "../assets/models/tv1.glb"
+import tv2 from "../assets/models/tv2.glb"
+
+import console2 from "../assets/models/console2.glb"
+import apple from "../assets/models/apple.glb"
+
+import PSconsole from "../assets/models/PSconsole.glb"
+import samsung2 from "../assets/models/samsung2.glb"
+import sony from "../assets/models/sony.glb"
+
+//this part is not for our use just used for testing the ARs
+
 import ioschair from "../assets/models/sheenchair.usdz";
 import painting from "../assets/models/Painting.glb";
 import iospainting from "../assets/models/Painting.usdz";
@@ -15,11 +43,12 @@ const productItems = [
   {
     id: 1,
     name: "Laptop",
-    modelSrc: sheenchair,
+    modelSrc: laptop1,
     iOSSrc: ioschair,
     category: "Furniture",
     price: "1,00,000",
     color: "Orange",
+
     annotations: [
       {
         title: "comfortable-back",
@@ -41,7 +70,7 @@ const productItems = [
   {
     id: 2,
     name: "Television",
-    modelSrc: OfficeChair,
+    modelSrc: tv1,
     iOSSrc: OfficeChairUsdz,
     category: "Furniture",
     color: "black",
@@ -67,7 +96,7 @@ const productItems = [
   {
     id: 3,
     name: "iPhone",
-    modelSrc: pot,
+    modelSrc: mobile2,
     iOSSrc: potUsdz,
     category: "Environment",
     color: "Red",
@@ -86,7 +115,7 @@ const productItems = [
   {
     id: 4,
     name: "MiPhone",
-    modelSrc: painting,
+    modelSrc: mobile3,
     iOSSrc: iospainting,
     category: "Art",
     color: "Brown",
@@ -112,7 +141,7 @@ const productItems = [
   {
     id: 5,
     name: "JBL Headphones",
-    modelSrc: car,
+    modelSrc: headphones2,
     iOSSrc: ioscar,
     category: "Vehicle",
     color: "Blue",
@@ -138,7 +167,7 @@ const productItems = [
   {
     id: 6,
     name: "Walmart Headphones",
-    modelSrc: car1,
+    modelSrc: headphones3,
     iOSSrc: ioscar1,
     category: "Vehicle",
     color: "Red",
