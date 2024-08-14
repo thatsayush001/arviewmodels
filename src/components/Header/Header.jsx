@@ -3,15 +3,6 @@ import { Link } from "react-router-dom";
 import "./styles.css";
 
 const Header = () => {
-  const navigationLinks = [
-    { label: "Home", Path: "/" },
-    // { label:"WishList" ,Path:"/wishlist"},
-    // { label: "About", Path: "/about" },
-    // { label: "Feedback", Path: "/feedback" },
-    // { label: "Contact", Path: "/contact" },
-    // { label: "SignIn", Path: "/sign-in" },
-    // { label: "SignUp", Path: "/sign-up" },
-  ];
   const [showMobileSidebar, setShowMobileSidebar] = useState(true);
   const handleItemClick = () => {
     setShowMobileSidebar(true);
@@ -47,16 +38,7 @@ const Header = () => {
         </div>
         {/* Desktop Navigation */}
       </nav>
-      <ul className={`desktop-nav ${showMobileSidebar ? "" : "show"}`}>
-        {navigationLinks.map((items, key) => {
-          return (
-            <li key={key} onClick={handleItemClick}>
-              <Link to={items.Path}>{items.label}</Link>
-            </li>
-          );
-          /* activeStyle={{ color: "blue", textDecoration: "underline" }} */
-        })}
-      </ul>
+    
     </header>
   );
 };

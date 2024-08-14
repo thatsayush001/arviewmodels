@@ -4,10 +4,8 @@ import QRCode from "qrcode.react";
 import Help from "./Help";
 
 const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
-  const [selectedVariant, setSelectedVariant] = useState('default');
   const [display, setDisplay] = useState(false);
   const [ARSupported, setARSupported] = useState(false);
-  const [annotate, setAnnotate] = useState(false);
   const [isInWishlist, setIsInWishlist] = useState(false);
   
   let modelViewer1 = {
@@ -30,11 +28,7 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
     } else if (document.exitFullscreen) document.exitFullscreen();
   }
 
-  const handleAnnotateClick = (annotation) => {
-    const { orbit, target, position } = annotation;
-    model.current.cameraTarget = position;
-    model.current.orbit = target;
-  }
+
 
   useEffect(() => {
     if (
@@ -91,7 +85,7 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
   };
 
   return (
-    <div className="model-view">
+    <div className="model-view ">
       <model-viewer
         key={item.id}
         ref={model}
