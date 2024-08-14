@@ -12,6 +12,8 @@ import SignUp from "./components/SignUp/SignUp";
 import SignIn from "./components/SignIn/Signin";
 import WishList from "./components/Wishlist/WishList";
 import { useState } from "react";
+import productItems from "./data/ProductItems";
+import ModelViewer from "./components/ModelViewer/ModelViewer";
 
 const App = () => {
   const [wishlist, setWishlist] = useState([]);
@@ -46,6 +48,20 @@ const App = () => {
               <WishList wishlist={wishlist} onRemoveItem={handleRemoveItem} />
             }
           />
+           {productItems.map(item => (
+          <Route 
+            key={item.id} 
+            path={`/view/${item.id}`} 
+            element={
+              <ModelViewer 
+                item={item} 
+                addToWishlist={addToWishlist}
+                wishlist={wishlist}
+                removeFromWishlist={handleRemoveItem}
+              />
+            } 
+          />
+        ))}
           <Route path="/about" element={<About />} />
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/contact" element={<Contact />} />

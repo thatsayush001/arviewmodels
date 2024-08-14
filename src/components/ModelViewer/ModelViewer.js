@@ -174,21 +174,10 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
             <div>
               <div className="pname">{item.name}</div>
               <div className="rating-sec">
-                <div>Rating</div>
-                <div>
-                  <span className="star">&#9733;</span>
-                  <span className="star">&#9733;</span>
-                  <span className="star">&#9733;</span>
-                  <span>&#9733;</span>
-                  <span>&#9733;</span>
-                </div>
               </div>
               <div>Rs. {item.price}</div> {/* Updated to use item.price */}
               {!ARSupported && <h5>Scan the QR code for AR View on mobile</h5>}
             </div>
-            <button className="add-icon" onClick={handleAddToWishlist}>
-              {isInWishlist ? '-' : '+'}
-            </button>
           </div>
         </div>
       </LazyLoad>
