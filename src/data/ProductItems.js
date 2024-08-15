@@ -220,7 +220,7 @@ const productItems = [
   },
   {
     id: "headphones1",
-    name: "Sony WH-1000XM5",
+    name: "Apple Air Pods max",
     modelSrc: headphones,
     iOSSrc: iosheadphones,
     category: "Headphones",
@@ -283,7 +283,7 @@ const productItems = [
     }
   },
   {
-    id: "tv3",
+    id: "tv2",
     name: "Samsung QN90B Neo QLED",
     modelSrc: tv1,
     iOSSrc: iostv1,
