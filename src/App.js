@@ -14,8 +14,7 @@ const App = () => {
           <Route
             path="/"
             element={
-              <ProductList
-              />
+              <ProductList />
             }
           />
            {productItems.map(item => (

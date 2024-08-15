@@ -107,6 +107,34 @@ import ioswarehouse from "../assets/models/warehouse.usdz";
 
 const productItems = [
   {
+    id: "speaker3",
+    name : "JBL Charge 5",
+    price : 14999,
+    modelSrc: speaker3,
+    iOSSrc: iosspeaker3,
+    specs : {
+      type : "Portable Bluetooth",
+      battery_life : "20 hours",
+      water_resistant : "Yes",
+      built_in_microphone: "No"
+    },
+    category: "Speakers"
+  },
+  {
+    id: "speaker2",
+    name: "Sony SRS-XB43",
+    price: 26990,
+    modelSrc: speaker2,
+    iOSSrc: iosspeaker2,
+    specs : {
+      type: "Portable Bluetooth",
+      battery_life: "24 hours",
+      water_resistant: "Yes",
+      built_in_microphone : "No"
+    },
+    category: "Speakers"
+  },
+  {
     id: "mobile3",
     name: "iPhone 14 Pro",
     modelSrc: mobile3,
